@@ -3,9 +3,19 @@ JSON/MongoDB tests
 http://nicholasjohnson.com/mongo/course/workbook/
 
 
+Connecting to the terminal
+We connect to the Mongo terminal using the mongo command
+- mongo
+By default Mongo will connect to localhost.
+
+We can connect to a remote server by passing arguments, like so:
+- mongo connection.mongolab.com:45352 -u username -p passw0rd
+Once we connect to a Mongo instance we can type JavaScript directly into the console. We can create variables, do maths, write JSON.
+
+---
 Creating a database
 We can switch to a database in Mongo with the use command.
-- [i]use petshop[/i]
+- use petshop
 
 This will switch to writing to the petshop database. It doesn't matter if the database doesn't exist yet. It will be brought into existence when you first write a document to it.
 
@@ -14,9 +24,17 @@ You can find which database you are using simply by typing db. You can drop the 
 - > petshop
 - db.dropDatabase()
 
-
+---
 Collections
-Collections are sets of (usually) related documents. Your database can have as many collections as you like. Because Mongo has no joins, a Mongo query can pull data from only one collection at a time. You will need to take this into account when deciding how to arrange your data.
+Collections are sets of (usually) related documents. Your database can have as many collections as you like. Because Mongo has no joins, a Mongo query can pull data from only one collection at a time. You will need to take this into account when deciding how to arrange your data. You can create a collection using the createCollection command.
+- use petshop
+- db.createCollection('mammals')
+Collections will also be created automatically. If you write a document to a collection that doesn't exist that collection will be brought into being for you.
+
+View your databases and collections using the show command, like this:
+- show dbs
+- show collections
+
 
 
 **General Notes**
