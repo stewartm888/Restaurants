@@ -1,5 +1,22 @@
 # Restaurants
 JSON/MongoDB tests
+http://nicholasjohnson.com/mongo/course/workbook/
+
+
+Creating a database
+We can switch to a database in Mongo with the use command.
+      use petshop
+
+This will switch to writing to the petshop database. It doesn't matter if the database doesn't exist yet. It will be brought into existence when you first write a document to it.
+
+You can find which database you are using simply by typing db. You can drop the current database and everything in it using db.dropDatabase.
+      db
+      > petshop
+      db.dropDatabase()
+
+
+Collections
+Collections are sets of (usually) related documents. Your database can have as many collections as you like. Because Mongo has no joins, a Mongo query can pull data from only one collection at a time. You will need to take this into account when deciding how to arrange your data.
 
 
 **General Notes**
