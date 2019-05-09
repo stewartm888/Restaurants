@@ -5,7 +5,7 @@ http://nicholasjohnson.com/mongo/course/workbook/
 
 Creating a database
 We can switch to a database in Mongo with the use command.
-- use petshop
+- [i]use petshop[/i]
 
 This will switch to writing to the petshop database. It doesn't matter if the database doesn't exist yet. It will be brought into existence when you first write a document to it.
 
