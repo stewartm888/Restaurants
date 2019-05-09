@@ -2,7 +2,7 @@
 JSON/MongoDB tests
 http://nicholasjohnson.com/mongo/course/workbook/
 
-
+---
 Connecting to the terminal
 We connect to the Mongo terminal using the mongo command
 - mongo
@@ -35,7 +35,64 @@ View your databases and collections using the show command, like this:
 - show dbs
 - show collections
 
+---
 
+Documents
+Documents are JSON objects that live inside a collection. They can be any valid JSON format, with the caveat that they can't contain functions.
+
+The size limit for a document is 16Mb which is more than ample for most use cases.
+
+Creating a document
+You can create a document by inserting it into a collection
+- db.mammals.insert({name: "Polar Bear"})
+- db.mammals.insert({name: "Star Nosed Mole"})
+
+---
+
+Finding a document
+You can find a document or documents matching a particular pattern using the find function.
+
+If you want to find all the mammals in the mammals collection, you can do this easily.
+- db.mammals.find()
+
+
+You can use find to:
+
+Find a document by id
+Find a user by email
+Find a list of all users with the same first name
+Find all cats who are more than 12 years old
+Find all gerbils called 'Herbie' who are bald, have three or more eyes, and who have exactly 3 legs.
+Limitations
+You can't use find to chain complex operators. You can do a few simple things like counting, but if you want to real power you need the aggregate pipeline, which is actually not at all scary and is quite easy to use.
+
+The Aggregate pipeline allows us to chain operations together and pipe a set of documents from one operation to the next.
+
+You can use find with no arguments to list documents in a collection.
+- db.entrycodes.find()
+
+This will list all of the codes, 20 at a time.
+
+You can get the same result by passing an empty object, like so:
+- db.entrycodes.find({})
+
+Assuming you know the object ID of a document. You can pull that document by id like so:
+- db.entrycodes.find(ObjectId("557afc91c0b20703009f7edf"))
+
+Say you have a list of users and you want to find by name, you might do:
+- db.people.find({name: "dave"})
+
+You can match on more than one field:
+- db.people.find({
+- >  name: "dave",
+- >  email: "davey@aol.com"
+- })
+
+
+You can match on numbers:
+
+
+---
 
 **General Notes**
 
