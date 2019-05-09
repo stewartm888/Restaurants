@@ -10,9 +10,9 @@ We can switch to a database in Mongo with the use command.
 This will switch to writing to the petshop database. It doesn't matter if the database doesn't exist yet. It will be brought into existence when you first write a document to it.
 
 You can find which database you are using simply by typing db. You can drop the current database and everything in it using db.dropDatabase.
-> db
-> > petshop
-> db.dropDatabase()
+- db
+- > petshop
+- db.dropDatabase()
 
 
 Collections
