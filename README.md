@@ -2,6 +2,14 @@
 JSON/MongoDB tests
 http://nicholasjohnson.com/mongo/course/workbook/
 https://www.journaldev.com/19392/python-xml-to-json-dict
+
+**xml2json.py**
+A handy python tool that converts XML files into a json object which is then written to a text file. Requires an .xml file and a .txt file in the active directory.  
+
+
+
+
+
 ---
 Connecting to the terminal
 We connect to the Mongo terminal using the mongo command
