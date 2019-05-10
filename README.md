@@ -1,7 +1,7 @@
 # Restaurants
 JSON/MongoDB tests
 http://nicholasjohnson.com/mongo/course/workbook/
-
+https://www.journaldev.com/19392/python-xml-to-json-dict
 ---
 Connecting to the terminal
 We connect to the Mongo terminal using the mongo command
