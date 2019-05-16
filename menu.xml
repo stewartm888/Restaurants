@@ -14,7 +14,7 @@
 	<food>
 		<name>Berry-Berry Belgian Waffles</name>
 		<price>$8.95</price>
-		<description></description>
+		<description>Warm, sweet, and ready to eat! Belgian waffles under a mix of blueberries and blackberries</description>
 		<calories>900</calories>
 	</food>
 	<food>
@@ -28,5 +28,17 @@
 			<price>$6.95</price>
 			<description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
 			<calories>950</calories>
+	</food>
+	<food>
+		<name>Pile of Eggs</name>
+		<price>$12.50</price>
+		<description>Four eggs with salt and peper</description>
+		<calories>300</calories>
+	</food>
+	<food>
+		<name>Hot Coffee Deluxe</name>
+			<price>$2.99</price>
+			<description>A steaming mug of brain juice to start your day!</description>
+			<calories>0</calories>
 	</food>
 </menu>
