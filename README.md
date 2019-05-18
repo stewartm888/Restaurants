@@ -1,4 +1,4 @@
-**Setup**
+# Setup
 
 To install the required libraries, use pip install and the provided requirements.txt file.
 
