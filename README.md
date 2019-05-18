@@ -6,7 +6,7 @@ To install the required libraries, use pip install and the provided requirements
 
 This demonstration assumes that a MongoDB instance is running on the default host. From the terminal, you can start it with the following command:
 
-	$mongod
+	$ mongod
 
 ---
 
