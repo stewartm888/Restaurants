@@ -1,0 +1,7 @@
+os
+json
+pymongo
+jupyter
+requests
+xmltodict
+pprint
