@@ -1,3 +1,11 @@
+**Setup**
+To install the required libraries, use pip install and the provided requirements.txt file.
+
+	pip install -r requirements.txt
+
+
+
+
 # Restaurants
 JSON/MongoDB tests
 http://nicholasjohnson.com/mongo/course/workbook/
