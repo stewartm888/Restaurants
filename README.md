@@ -4,6 +4,12 @@ To install the required libraries, use pip install and the provided requirements
 
 	pip install -r requirements.txt
 
+This demonstration assumes that a MongoDB instance is running on the default host. From the terminal, you can start it with the following command:
+
+	$mongod
+
+---
+
 
 
 
